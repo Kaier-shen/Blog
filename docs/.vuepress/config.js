@@ -10,6 +10,7 @@ module.exports = {
   theme: 'reco',
   themeConfig: {
     subSidebar: 'auto',
+    lastUpdated: '上次更新', // string | boolean
     nav: [
       { text: '首页', link: '/' },
       { 
@@ -21,6 +22,11 @@ module.exports = {
       }
     ],
     sidebar: [
+      {
+        title: '首页',
+        path: '/',
+        collapsable: false, // 不折叠
+      },
       {
         title: "基础学习",
         path: '/book/Study1',
