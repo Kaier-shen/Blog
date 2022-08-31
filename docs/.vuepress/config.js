@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
+  base: '/Blog/',
   locales: {
     '/': {
       lang: 'zh-CN'
@@ -8,6 +9,7 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: {
+    subSidebar: 'auto',
     nav: [
       { text: '首页', link: '/' },
       { 
@@ -18,7 +20,6 @@ module.exports = {
         ]
       }
     ],
-    subSidebar: 'auto',
     sidebar: [
       {
         title: "基础学习",
